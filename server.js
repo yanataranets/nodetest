@@ -17,9 +17,16 @@
 |     Make sure to pass relative path from the project root.
 */
 
+import app from "@adonisjs/framework/src/Server";
+
 const { Ignitor } = require('@adonisjs/ignitor')
 
 new Ignitor(require('@adonisjs/fold'))
   .appRoot(__dirname)
   .fireHttpServer()
   .catch(console.error)
+
+
+
+const port = process.env.PORT || 3333;
+app.listen(port, ()=> console.log('listemimg song on port 3333'))

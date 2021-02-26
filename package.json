@@ -1,20 +1,12 @@
 {
-  "name": "adonis-fullstack-app",
-  "version": "4.1.0",
   "adonis-version": "4.1.0",
-  "description": "The fullstack application boilerplate for Adonisjs",
-  "main": "server.js",
-  "scripts": {
-    "start": "nodemon server.js",
-    "heroku-postbuild": "npm rebuild node-sass"
-  },
-  "keywords": [
-    "adonisjs",
-    "adonis-app"
-  ],
   "author": "",
-  "license": "UNLICENSED",
-  "private": true,
+  "autoload": {
+    "App": "./app"
+  },
+  "bugs": {
+    "url": "https://github.com/yanataranets/nodetest/issues"
+  },
   "dependencies": {
     "@adonisjs/ace": "^9.0.5",
     "@adonisjs/auth": "^3.1.0",
@@ -27,10 +19,32 @@
     "@adonisjs/lucid": "^6.2.1",
     "@adonisjs/session": "^1.0.29",
     "@adonisjs/shield": "^1.0.8",
+    "heroku": "^7.2.0",
     "nodemon": "^2.0.7",
+    "rm": "^0.1.8",
     "serve": "^11.3.2"
   },
-  "autoload": {
-    "App": "./app"
-  }
+  "description": "The fullstack application boilerplate for Adonisjs",
+  "engines": {
+    "node": "v14.15.4"
+  },
+  "homepage": "https://github.com/yanataranets/nodetest#readme",
+  "keywords": [
+    "adonisjs",
+    "adonis-app"
+  ],
+  "license": "UNLICENSED",
+  "main": "server.js",
+  "name": "adonis-fullstack-app",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanataranets/nodetest.git"
+  },
+  "scripts": {
+    "start": "nodemon server.js",
+    "heroku-postbuild": "npm rebuild node-sass"
+  },
+  "version": "4.1.0"
+}
 }

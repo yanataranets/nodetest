@@ -29,4 +29,4 @@ new Ignitor(require('@adonisjs/fold'))
 
 
 const port = process.env.PORT || 3000;
-app.listen(port, ()=> console.log('listemimg song on port 3000'))
+app.listen(port, ()=> console.log('listening song on port 3000'));

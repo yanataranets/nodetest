@@ -6,9 +6,9 @@
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
-    "heroku-postbuild": "npm rebuild node-sass"
+    "heroku-postbuild": "npm rebuild node-sass",
+    "postinstall": "npm rebuild node-sass && npm install --unsafe-perm -f node-sass"
   },
-  "postinstall": "npm rebuild node-sass && npm install --unsafe-perm -f node-sass",
   "keywords": [
     "adonisjs",
     "adonis-app"
